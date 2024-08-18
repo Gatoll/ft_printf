@@ -6,15 +6,17 @@
 #    By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 19:14:20 by kaokazak          #+#    #+#              #
-#    Updated: 2024/04/29 16:39:16 by kaokazak         ###   ########.fr        #
+#    Updated: 2024/08/19 05:21:37 by kaokazak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRCSDIR = .
-FILES = ft_atoi.c \
+AR = ar rcs
+RM = rm -f
+
+SRCS = ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
 		ft_isalnum.c \
@@ -58,21 +60,21 @@ FILES = ft_atoi.c \
 		ft_lstnew.c \
 		ft_lstsize.c
 
-OBJS = $(FILES:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 	
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 	
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
-	rm -f $(OBJS)
+	$(RM) $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

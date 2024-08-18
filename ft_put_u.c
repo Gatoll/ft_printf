@@ -6,11 +6,10 @@
 /*   By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:30:09 by kaokazak          #+#    #+#             */
-/*   Updated: 2024/04/29 19:09:12 by kaokazak         ###   ########.fr       */
+/*   Updated: 2024/08/19 05:32:08 by kaokazak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 static void	ft_rec_putunbr_len(unsigned int num)

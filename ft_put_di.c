@@ -6,11 +6,10 @@
 /*   By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:30:04 by kaokazak          #+#    #+#             */
-/*   Updated: 2024/04/29 16:52:50 by kaokazak         ###   ########.fr       */
+/*   Updated: 2024/08/19 05:32:00 by kaokazak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 int	ft_putnbr_len(int num)

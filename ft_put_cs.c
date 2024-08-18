@@ -6,11 +6,10 @@
 /*   By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:30:02 by kaokazak          #+#    #+#             */
-/*   Updated: 2024/04/29 17:26:41 by kaokazak         ###   ########.fr       */
+/*   Updated: 2024/08/19 05:31:49 by kaokazak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 int	ft_putchar_len(int c)

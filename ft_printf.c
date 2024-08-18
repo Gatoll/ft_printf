@@ -6,18 +6,14 @@
 /*   By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:29:59 by kaokazak          #+#    #+#             */
-/*   Updated: 2024/04/30 13:35:09 by kaokazak         ###   ########.fr       */
+/*   Updated: 2024/08/19 05:31:44 by kaokazak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 static int	ft_format(char format, va_list args)
 {
-	int	len;
-
-	len = 0;
 	if (format == 'c')
 		return (ft_putchar_len(va_arg(args, int)));
 	else if (format == 's')
