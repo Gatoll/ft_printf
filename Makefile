@@ -6,7 +6,7 @@
 #    By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 13:30:19 by kaokazak          #+#    #+#              #
-#    Updated: 2024/08/19 18:39:29 by kaokazak         ###   ########.fr        #
+#    Updated: 2024/08/19 18:45:24 by kaokazak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	&(AR) $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 	
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
