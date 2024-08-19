@@ -6,14 +6,14 @@
 /*   By: kaokazak <kaokazak@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:29:56 by kaokazak          #+#    #+#             */
-/*   Updated: 2024/08/19 05:21:13 by kaokazak         ###   ########.fr       */
+/*   Updated: 2024/08/19 17:22:15 by kaokazak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "./libft/libft.h"
+# include <unistd.h>
 # include <stdarg.h>
 # include <stdint.h>
 
